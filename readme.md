@@ -65,7 +65,7 @@ INSERT INTO users (name, email, role)
 ## Operations 
 
 ### deps
-npm i express pg
+npm i express pg  swagger-ui-express swagger-jsdoc
 
 ### Start API
 ```
