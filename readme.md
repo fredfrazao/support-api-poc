@@ -96,3 +96,7 @@ curl -X "DELETE" http://localhost:3000/users/5
 ```
 curl -X PUT -d "name=Fred" -d "email=fred@example.com" d "role=member" http://localhost:3000/users/5
 ```
+
+
+
+#### Finalize swagger Documentation 

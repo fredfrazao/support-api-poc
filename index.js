@@ -31,7 +31,7 @@ const options = {
 * @swagger
 * /users:
 *   get:
-*     summary: Retrieve a list of JSONPlaceholder users
+*     summary: Retrieve a list of JSONPlaceholder users / curl -X GET http://localhost:3000/users
  *     responses:
  *       200:
  *         description: Create a user.
@@ -57,7 +57,7 @@ const options = {
 *                       type: string
 *                       description: The user's role.
 *   post:
-*     summary: Create a User
+*     summary: Create a User /  curl --data "name=Alexis&email=Alexis@example.com&role=member" http://localhost:3000/users
 *     requestBody:
 *       required: true
 *       content:
@@ -78,8 +78,10 @@ const options = {
 *                 description: The user's role.
 *                 example: member
 *   delete:
-*     summary: Delete a users based on the id
+*     summary: Delete a User curl -X "DELETE" http://localhost:3000/users/5
 */
+
+
 const specs = swaggerJsdoc(options);
 
 app.use(
